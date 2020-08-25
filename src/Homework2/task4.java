@@ -1,13 +1,18 @@
 package Homework2;
 
-//public class task4 {
-//    public static void main(String[] args) {
-//        int[][] arr = new int[4][4];
-//        for (int i = 0; i < 4; i++) {
-//            for (int j = 0; j < 4; j++) {
-//                System.out.print(arr[i][j] + "1");
-//            }
-//            System.out.println("");
-//        }
-//    }
-//}
+import java.util.Arrays;
+
+public class task4 {
+
+    public static void main(String[] args) {
+        int[][] array = new int[5][5];
+        for (int i = 0; i < array.length; i++) {
+            int lastIndex = array.length - 1;
+            array[i][i] = array[i][lastIndex - i] = 1;
+                System.out.println(Arrays.toString(array[i]));
+            }
+        }
+        }
+
+
+
